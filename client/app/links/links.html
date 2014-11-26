@@ -1,3 +1,20 @@
 <div id='container'>
   <!-- Your html here -->
+  <div ng-controller="LinksController">
+  	<input ng-model="search.url">
+    <ul class="list-group">
+      <li ng-repeat="link in data.links | filter:search" class="list-group-item">
+        <div >
+        <h3>{{ link.title }}</h3>
+        <h4> {{link.url}} </h4>
+        <h4 class ="btn btn-success disabled">Counter: {{link.visits}} </h4>
+        <a href={{link.url}}>
+          {{link.base_url}}/#{{link.code}}
+        <a>
+
+        </div>
+      </li>
+    </ul>
+    
+  </div>
 </div>

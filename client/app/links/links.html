@@ -8,7 +8,7 @@
         <h3>{{ link.title }}</h3>
         <h4> {{link.url}} </h4>
         <h4 class ="btn btn-success disabled">Counter: {{link.visits}} </h4>
-        <a href={{link.url}}>
+        <a href="{{link.base_url}}/api/links/{{link.code}}">
           {{link.base_url}}/#{{link.code}}
         <a>
 

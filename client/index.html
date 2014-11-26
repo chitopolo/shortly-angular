@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html ng-app='shortly'>
-  <head>
+<head>
     <meta charset="utf-8" />
     <title>Shortly</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="styles/style.css" /> -->
-  </head>
-  <body  class="container">
+</head>
+<body  class="container">
 
     <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
 
-<nav class="navbar navbar-inverse" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Shortly</a>
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Shortly</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -30,26 +30,24 @@
         <li> <a href="#/signup">Signup</a></li>
         <li><a href="#/links">Show links</a></li>
         <li><a href="#/shorten">Create a short link</a></li>
-        
-      </ul>
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+        <li><a class="navbar-brand" href="#">Shortly</a></li>
+    </ul>
+    
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
 </nav>
 
-    <div ng-view>
-      
+<div ng-view>
 
+</div>
 
-    </div>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
 
-    <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular-route/angular-route.js"></script>
-
-    <script src="app/auth/auth.js"></script>
-    <script src="app/links/links.js"></script>
-    <script src="app/shorten/shorten.js"></script>
-    <script src="app/services/services.js"></script>
-    <script src="app/app.js"></script>
-  </body>
+<script src="app/auth/auth.js"></script>
+<script src="app/links/links.js"></script>
+<script src="app/shorten/shorten.js"></script>
+<script src="app/services/services.js"></script>
+<script src="app/app.js"></script>
+</body>
 </html>
